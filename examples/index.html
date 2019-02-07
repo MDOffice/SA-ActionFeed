@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>jQuery.autosave Examples</title>
+
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1>jQuery.autosave Examples</h1>
+
+<h2>The Forms</h2>
+<form class="autosave-form" data-autosave="test1">
+    <ol class="example">
+        <li>
+            <h4>Text</h4>
+            <input name="text" value=""/>
+        </li>
+        <li>
+            <h4>Textarea</h4>
+            <textarea name="textarea"></textarea>
+        </li>
+        <li>
+            <h4>Radio Group</h4>
+            <span class="group">
+            <label class="radio"><input name="radio" type="radio" value="1"/>1</label>
+            <label class="radio"><input name="radio" type="radio" value="2"/>2</label>
+            <label class="radio"><input name="radio" type="radio" value="3"/>3</label>
+          </span>
+        </li>
+        <li>
+            <h4>Checkbox Group</h4>
+            <span class="group">
+            <label class="checkbox"><input name="checkbox" type="checkbox" value="1"/>1</label>
+            <label class="checkbox"><input name="checkbox" type="checkbox" value="2"/>2</label>
+            <label class="checkbox"><input name="checkbox" type="checkbox" value="3"/>3</label>
+          </span>
+        </li>
+        <li>
+            <h4>Select List</h4>
+            <select name="select">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </li>
+        <li>
+            <h4>Multiple Select List</h4>
+            <select name="multi-select" multiple>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </li>
+    </ol>
+
+    <button type="button" name="save" onclick="if(window.Autosave)Autosave.remove(this.form)">Save</button>
+</form>
+
+<form class="autosave-form" data-autosave="test2">
+    <input name="text2" value=""/>
+</form>
+
+</body>
+</html>

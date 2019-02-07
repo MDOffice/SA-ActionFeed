@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ]
+  ],
+  "plugins": [
+    /*"add-module-exports"*/
+    "@babel/transform-modules-umd"
+  ]
+}

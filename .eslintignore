@@ -1,0 +1,4 @@
+**/*.min.js
+**/dist/
+/_gh_pages/
+test

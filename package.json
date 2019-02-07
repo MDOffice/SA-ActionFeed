@@ -1,0 +1,44 @@
+{
+  "name": "sa-action-feed",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Kelatev",
+  "license": "MIT",
+  "main": "./dist/sa-action-feed.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelatev/SA-ActionFeed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kelatev/SA-ActionFeed/issues"
+  },
+  "homepage": "https://github.com/kelatev/SA-ActionFeed#readme",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --open-page example/",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js src/js test/unit",
+    "build": "webpack --config build/webpack.prod.conf.js"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-umd": "^7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "eslint": "^5.13.0",
+    "expose-loader": "^0.7.5",
+    "jest": "^24.0.0",
+    "path": "^0.12.7",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  }
+}
